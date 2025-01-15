@@ -13,8 +13,6 @@ RUN apt-get update && \
 
 EXPOSE 22445 33445 44445
 
-VOLUME ["/config/.pandacoin"]
-
 WORKDIR /tmp
 
 RUN curl -L -o ${TARBALL_NAME} ${TARBALL_URL} && \
