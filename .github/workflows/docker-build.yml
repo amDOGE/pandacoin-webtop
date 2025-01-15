@@ -51,6 +51,6 @@ jobs:
           build-args: |
             BASE_IMAGE=lscr.io/linuxserver/webtop:${{ matrix.variant }}
           tags: |
-            ghcr.io/${{ github.repository_owner }}/pandacoin-webtop:${{ matrix.variant }}-v${{ env.APP_VERSION }}
+            ghcr.io/amdoge/pandacoin-webtop:${{ matrix.variant }}-v${{ env.APP_VERSION }}
             docker.io/${{ secrets.DOCKERHUB_USERNAME }}/pandacoin-webtop:${{ matrix.variant }}-v${{ env.APP_VERSION }}
           push: true
